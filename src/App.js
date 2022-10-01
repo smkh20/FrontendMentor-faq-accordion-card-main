@@ -1,5 +1,10 @@
+import Question from "./Question";
 function App() {
-  return;
+  return (
+    <div className="main">
+      <Question />
+    </div>
+  );
 }
 
 export default App;
