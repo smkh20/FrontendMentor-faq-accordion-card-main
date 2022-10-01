@@ -28,4 +28,10 @@ body {
   width: 375px;
   border-radius: 22px;
   background-color: white;
+  position: relative;
+}
+.woman {
+  width: 240px;
+  position: absolute;
+  top: -100%;
 }
