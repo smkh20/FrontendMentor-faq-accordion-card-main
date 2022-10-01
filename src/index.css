@@ -19,6 +19,7 @@ body {
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
+  background-color: var(--bgSoftViolet);
 }
 .main {
   display: flex;
@@ -26,4 +27,5 @@ body {
   align-items: center;
   width: 375px;
   border-radius: 22px;
+  background-color: white;
 }
