@@ -5,7 +5,7 @@ const Question = ({ faq, toggle, show }) => {
   const { q, a } = faq;
   const cssclass = show ? "title dark" : "title gray";
   return (
-    <div>
+    <>
       <div className="questuontitle">
         <h2 className={cssclass} onClick={toggle}>
           {q}
@@ -22,7 +22,7 @@ const Question = ({ faq, toggle, show }) => {
         {a}
       </p>
       <div className="divider"></div>
-    </div>
+    </>
   );
 };
 
