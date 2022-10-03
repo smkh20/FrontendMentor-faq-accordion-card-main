@@ -50,7 +50,7 @@ body {
 .gray {
   color: var(--txtGrayishBlue);
 }
-.title{
+.title {
   font-size: 16px;
   transition: 0.3s;
 }
@@ -61,7 +61,7 @@ body {
 .answer {
   color: var(--txtGrayishBlue);
   overflow: hidden;
-  transition: height 0.3s;
+  transition: 0.3s;
 }
 .divider {
   width: 100%;

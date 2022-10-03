@@ -15,7 +15,7 @@ const Question = ({ faq, toggle, show }) => {
       <p
         ref={contentEl}
         className="answer"
-        style={show ? { height: contentEl.current.scrollHeight + 10, paddingTop: "10px" } : { height: "0px" }}
+        style={show ? { height: contentEl.current.scrollHeight + 10, paddingTop: "10px" } : { height: "0px", paddingTop: 0 }}
       >
         {a}
       </p>
