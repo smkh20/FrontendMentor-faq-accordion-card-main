@@ -58,6 +58,12 @@ body {
   cursor: pointer;
   color: var(--txtSoftRed);
 }
+.arrow {
+  transition: 0.3s;
+}
+.arrowup {
+  transform: rotate(180deg);
+}
 .answer {
   color: var(--txtGrayishBlue);
   overflow: hidden;

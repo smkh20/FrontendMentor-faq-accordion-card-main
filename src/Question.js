@@ -10,7 +10,9 @@ const Question = ({ faq, toggle, show }) => {
         <h2 className={cssclass} onClick={toggle}>
           {q}
         </h2>
-        <Arrow />
+        <div className={show ? " arrow arrowup" : "arrow"}>
+          <Arrow />
+        </div>
       </div>
       <p
         ref={contentEl}
