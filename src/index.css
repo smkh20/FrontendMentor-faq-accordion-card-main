@@ -29,9 +29,43 @@ body {
   border-radius: 22px;
   background-color: white;
   position: relative;
+  padding: 0 20px;
 }
 .woman {
   width: 240px;
   position: absolute;
   top: -110px;
+}
+.questioncontainer {
+  width: 100%;
+}
+.questuontitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark {
+  color: var(--txtDesaturatedBlue);
+}
+.gray {
+  color: var(--txtGrayishBlue);
+}
+.title{
+  font-size: 16px;
+  transition: 0.3s;
+}
+.title:hover {
+  cursor: pointer;
+  color: var(--txtSoftRed);
+}
+.answer {
+  color: var(--txtGrayishBlue);
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 15px 0;
+  background-color: var(--hrLightGrayishBlue);
 }
