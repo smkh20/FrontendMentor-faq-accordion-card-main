@@ -1,11 +1,25 @@
-import React, { useState } from "react";
-
-const Question = () => {
-  const [show, setShow] = useState(false);
+import React, { useRef } from "react";
+import Arrow from "./Arrow";
+const Question = ({ faq, toggle, show }) => {
+  const contentEl = useRef();
+  const { q, a } = faq;
+  const cssclass = show ? "title dark" : "title gray";
   return (
-    <div onClick={() => setShow((show) => !show)}>
-      <h2>title</h2>
-      {show && <p>gfjdh</p>}
+    <div>
+      <div className="questuontitle">
+        <h2 className={cssclass} onClick={toggle}>
+          {q}
+        </h2>
+        <Arrow />
+      </div>
+      <p
+        ref={contentEl}
+        className="answer"
+        style={show ? { height: contentEl.current.scrollHeight + 10, paddingTop: "10px" } : { height: "0px" }}
+      >
+        {a}
+      </p>
+      <div className="divider"></div>
     </div>
   );
 };
